@@ -3,3 +3,7 @@ build:
     web: web/Dockerfile.web
     api: api/Dockerfile.api
     mongo: api/Dockerfile.mongo
+
+run:
+  api: go run ./main.go
+  mongo:
