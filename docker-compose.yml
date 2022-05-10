@@ -9,7 +9,7 @@ services:
     image: todoweb:latest
     build:
       context: ./web
-      dockerfile: ./Dockerfile
+      dockerfile: ./Dockerfile.web
     ports:
       - 8080:8080
     restart: always
@@ -21,13 +21,11 @@ services:
     image: todoapi:latest
     build: 
       context: ./api
-      dockerfile: ./Dockerfile
+      dockerfile: ./Dockerfile.api
     networks:
       - todolistnetwork
     ports:
       - 3000:3000
-
-    
 
 networks:
   todolistnetwork:
