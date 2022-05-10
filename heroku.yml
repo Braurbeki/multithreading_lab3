@@ -2,7 +2,6 @@ build:
   docker:
     web: web/Dockerfile.web
     api: api/Dockerfile.api
-    mongo: api/Dockerfile.mongo
   config:
     REQUIREMENTS_FILENAME: heroku.yml
 
