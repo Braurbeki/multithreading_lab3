@@ -16,28 +16,28 @@ Mongo service is responsible for managing TODO-list notes. It is accessable on `
 ### `GET` /getAll
 ```json
 {
-    {"message": "eat", "id": 1, "done": false}, 
-    {"message": "sleep", "id": 2, "done": true}
+    {"message": "eat", "id": "1", "done": "false"}, 
+    {"message": "sleep", "id": "2", "done": "true"}
 }
 ```
 ### `GET` /get/{id}
 ```json
-{"message": "eat", "id": 1, "done": false} 
+{"message": "eat", "id": "1", "done": "false"} 
 ```
 ### `DELETE` /delete/{id}
-```json
-Return code: 200
-```
+- Return code: 200
 ### `POST` /update/{id}
 ```json
-Body: {"message": "eat", "id": 1, "done": true} // {"id": 1, "done": true}
-Return code: 200
+{"message": "eat", "id": "1", "done": "true"}
 ```
+- Note: Both `"message"` and `"done"` fields can be blank
+- Return code: 200
 ### `POST` /put
 ```json
-Body: {"message": "eat", "id": 1, "done": true} // {"id": 1, "done": true} - can be blank message
-Return code: 200
+{"message": "eat", "id": "1", "done": "true"}
 ```
+- Note: Both `"message"` and `"done"` fields can be blank
+- Return code: 200
 ## Stack
 ### Languages
 - `HTML`
