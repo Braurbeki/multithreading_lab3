@@ -53,5 +53,5 @@ app.post('/update/:id'), (req, res) => {
 
 app.listen(8080, () => {
     console.log("Server is UP")
-    console.log(`Listening on port ${process.env.PORT}`)
+    console.log(`Listening on port 80`)
 } )

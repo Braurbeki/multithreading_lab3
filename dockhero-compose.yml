@@ -6,19 +6,19 @@ services:
     ports:
       - 27017:27017
   web:
-    image: todoweb:latest
+    image: web:latest
     build:
       context: ./web
       dockerfile: ./Dockerfile.web
     ports:
-      - ${PORT}:8080
+      - 80:8080
     restart: always
     networks:
       - todolistnetwork
     depends_on:
       - api
   api:
-    image: todoapi:latest
+    image: api:latest
     build: 
       context: ./api
       dockerfile: ./Dockerfile.api
