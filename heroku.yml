@@ -6,4 +6,4 @@ build:
 
 run:
   api: go run ./main.go
-  mongo:
+  mongo: mongod
