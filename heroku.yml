@@ -4,8 +4,3 @@ build:
     api: api/Dockerfile.api
   config:
     REQUIREMENTS_FILENAME: heroku.yml
-
-run:
-  api: go run ./main.go
-  mongo: mongod
-  web: npm start
