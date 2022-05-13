@@ -3,7 +3,7 @@ TODO-List is a primitive example of cloud project, based on microservice archite
 ## Architecture
 ![Img](diagram.png)
 ## Usage
-You can navigate to [deployed demo project](http://dockhero-corrugated-07617.dockhero.io/). It's deployed to [Heroku](https://www.heroku.com/) on `DockHero` addon.
+You can navigate to [deployed demo project](http://dockhero-infinite-96567.dockhero.io/). It's deployed to [Heroku](https://www.heroku.com/) on `DockHero` addon.
 ## Local Build
 Navigate to project root directory.
 ```code
