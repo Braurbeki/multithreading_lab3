@@ -1,6 +1,8 @@
 services:
   mongo:
     image: mongo:4.4
+    volumes:
+      - mongo_vol:/data/db
     networks:
       - todolistnetwork
     ports:
@@ -26,6 +28,9 @@ services:
       - todolistnetwork
     ports:
       - 3000:3000
+
+volumes:
+  mongo_vol:
 
 networks:
   todolistnetwork:
